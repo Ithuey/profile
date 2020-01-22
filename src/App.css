@@ -27,3 +27,29 @@
   fill: white
 }
 
+.textContainer {
+ 
+display: flex;
+justify-content: center;
+margin: 10%; 
+}
+
+li {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  
+}
+
+.btnHome {
+  border-radius: 0;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  background: transparent; 
+  
+
+}
+
+

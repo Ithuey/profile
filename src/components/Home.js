@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import { motion } from 'framer-motion';
 import tree from './tree.svg'
-
-import '../App.css';
+import arrow from '../arrow.svg'
 
 function Home() {
 
@@ -85,12 +84,16 @@ function Home() {
 
 
 
+            <div className="textContainer">
+                <ul className="ulText">
+                    <li style={{ fontSize: '50px' }}>Hello, My name is <b>Todd Carpenter</b>.</li>
+                    <li style={{ fontSize: '50px' }}>I'm a full stack web developer.</li>
+                    <li><button align='center' className="btnHome">View my work <img style={{ verticalAlign: 'middle' }}
+                        align="center" src={arrow} /> </button></li>
+                </ul>
 
-
-
-
+            </div >
         </div>
-
 
     );
 }

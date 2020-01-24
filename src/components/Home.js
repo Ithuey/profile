@@ -3,6 +3,7 @@ import Header from './Header';
 import { motion } from 'framer-motion';
 import tree from './tree.svg'
 import arrow from '../arrow.svg'
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -32,10 +33,6 @@ function Home() {
                 }}
                 transition={{ duration: 1.60 }}
             />
-
-
-
-
             <motion.div style={{
                 width: 1000,
                 height: 1000,
@@ -88,8 +85,8 @@ function Home() {
                 <ul className="ulText">
                     <li style={{ fontSize: '50px' }}>Hello, My name is <b>Todd Carpenter</b>.</li>
                     <li style={{ fontSize: '50px' }}>I'm a full stack web developer.</li>
-                    <li><button align='center' className="btnHome">View my work <img style={{ verticalAlign: 'middle' }}
-                        align="center" src={arrow} /> </button></li>
+                    <li><Link to="/projects"><button align='center' className="btnHome">View my work <img style={{ verticalAlign: 'middle' }}
+                        align="center" src={arrow} /> </button></Link></li>
                 </ul>
 
             </div >

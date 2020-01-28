@@ -1,13 +1,13 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import tree from './tree.svg'
+import React from "react";
+import { motion } from "framer-motion";
+import tree from "./assets/tree.svg";
 
-import '../App.css';
+import "../App.css";
 
 function Contact() {
-    return (
-        <div className="container">
-            <motion.div style={{
+  return (
+    <div className="container">
+      {/* <motion.div style={{
                 width: 1000,
                 height: 1000,
                 borderRadius: 600,
@@ -55,10 +55,9 @@ function Contact() {
                     y: 500
                 }}
                 transition={{ duration: 1.60 }}
-            />
+            /> */}
 
-
-            {/* <motion.div
+      {/* <motion.div
                 style={{
                     zIndex: 3,
                     position: 'absolute',
@@ -77,18 +76,8 @@ function Contact() {
             >
                 <img src={tree} className='tree' />
             </motion.div> */}
-
-
-
-
-
-
-
-        </div>
-
-    );
+    </div>
+  );
 }
-
-
 
 export default Contact;

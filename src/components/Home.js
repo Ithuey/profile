@@ -9,60 +9,55 @@ import "../App.css";
 
 function Home() {
   return (
-    <div className="container">
-      <div>
+    <div className="container" >
+      <div className="animationContainer"  >
         <motion.div
           style={{
-            zIndex: 3,
-            position: "absolute"
+            width: 1000,
+            height: 1000,
+            borderRadius: 600,
+            background: "#44af69",
+            position: "absolute",
+            zIndex: 2,
+            boxShadow: "0px 3px 10px rgba(0, 0,0,1)"
           }}
-          //   style={{
-          //     width: "100%",
-          //     paddingBottom: "100%",
-          //     borderRadius: "50%",
-          //     background: "#44af69",
-          //     position: "absolute",
-          //     zIndex: 1,
-          //     boxShadow: "0px 3px 10px rgba(0, 0,0,1)"
-          //   }}
           initial={{
-            x: -500,
-            y: 350
+            x: -400,
+            y: 920
           }}
-          //   animate={{
-          //     x: ,
-          //     y: "
-          //   }}
+          animate={{
+            x: -400,
+            y: 580
+          }}
           transition={{ duration: 1.6 }}
-        >
-          <img src={circle} className="circle" />
-        </motion.div>
+        />
+        <motion.div
+          style={{
+            width: 1000,
+            height: 1000,
+            borderRadius: 600,
+            background: "#095256",
+            overflow: "hidden",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 1,
+            boxShadow: "0px 3px 10px rgba(0, 0,0,0.5)"
+          }}
+          initial={{
+            x: 1,
+            y: 370
+          }}
+          animate={{
+            x: 1,
+            y: 120 //120
+          }}
+          transition={{ duration: 1.6 }}
+        />
       </div>
-      {/* <motion.div
-        style={{
-          width: 1000,
-          height: 1000,
-          borderRadius: 600,
-          background: "#095256",
-          overflow: "hidden",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          zIndex: 0,
-          boxShadow: "0px 3px 10px rgba(0, 0,0,0.5)"
-        }}
-        initial={{
-          x: -10,
-          y: 750
-        }}
-        animate={{
-          x: -10,
-          y: 500
-        }}
-        transition={{ duration: 1.6 }}
-      /> */}
 
-      <motion.div
+
+      {/* <motion.div
         style={{
           zIndex: 3,
           position: "absolute"
@@ -78,7 +73,7 @@ function Home() {
         transition={{ duration: 1.9, type: "spring", damping: 100 }}
       >
         <img src={tree} className="tree" />
-      </motion.div>
+      </motion.div> */}
       <div className="textContainer">
         <ul className="ulText">
           <li style={{ fontSize: "50px" }}>

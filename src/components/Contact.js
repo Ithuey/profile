@@ -5,9 +5,9 @@ import tree from "./assets/tree.svg";
 import "../App.css";
 
 function Contact() {
-  return (
-    <div className="container">
-      {/* <motion.div style={{
+    return (
+        <div className="container">
+            <motion.div style={{
                 width: 1000,
                 height: 1000,
                 borderRadius: 600,
@@ -28,10 +28,6 @@ function Contact() {
                 }}
                 transition={{ duration: 1.60 }}
             />
-
-
-
-
             <motion.div style={{
                 width: 1000,
                 height: 1000,
@@ -55,9 +51,9 @@ function Contact() {
                     y: 500
                 }}
                 transition={{ duration: 1.60 }}
-            /> */}
+            />
 
-      {/* <motion.div
+            <motion.div
                 style={{
                     zIndex: 3,
                     position: 'absolute',
@@ -75,9 +71,9 @@ function Contact() {
                 transition={{ duration: 1.9, type: 'spring', damping: 100 }}
             >
                 <img src={tree} className='tree' />
-            </motion.div> */}
-    </div>
-  );
+            </motion.div>
+        </div>
+    );
 }
 
 export default Contact;

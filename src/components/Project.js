@@ -10,6 +10,7 @@ import "react-animated-slider/build/horizontal.css";
 import "normalize.css/normalize.css";
 import "../slider-animations.css";
 import "../Carousel.css";
+import "../Animations.css";
 
 const content = [
   {
@@ -50,52 +51,52 @@ const content = [
 function Project() {
   return (
     <div className="container">
-      {/* <motion.div
-        style={{
-          width: 1000,
-          height: 1000,
-          borderRadius: 600,
-          background: "#44af69",
-          position: "absolute",
-          zIndex: 2,
-          boxShadow: "0px 3px 10px rgba(0, 0,0,1)"
-        }}
-        initial={{
-          x: 80,
-          y: 700
-        }}
-        animate={{
-          x: 80,
-          y: 550
-        }}
-        transition={{ duration: 1.6 }}
-      />
+      <div className="animationContainerProject">
+        <motion.div
+          style={{
+            width: 1000,
+            height: 1000,
+            borderRadius: 600,
 
-      <motion.div
-        style={{
-          width: 1000,
-          height: 1000,
-          borderRadius: 600,
-          background: "#095256",
-          overflow: "hidden",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          zIndex: 1,
-          boxShadow: "0px 3px 10px rgba(0, 0,0,0.5)"
-        }}
-        initial={{
-          x: 350,
-          y: 700
-        }}
-        animate={{
-          x: 350,
-          y: 550
-        }}
-        transition={{ duration: 1.6 }}
-      /> */}
+            background: "#44af69",
+            position: "absolute",
+            zIndex: 2,
+            boxShadow: "0px 3px 10px rgba(0, 0,0,1)"
+          }}
+          initial={{
+            x: -150,
+            y: 750
+          }}
+          animate={{
+            x: -150,
+            y: 400
+          }}
+          transition={{ duration: 1.6 }}
+        />
 
-      {/* <motion.div
+        <motion.div
+          style={{
+            width: 1000,
+            height: 1000,
+            borderRadius: 600,
+            background: "#095256",
+            overflow: "hidden",
+            position: "absolute",
+            zIndex: 1,
+            boxShadow: "0px 3px 10px rgba(0, 0,0,0.5)"
+          }}
+          initial={{
+            x: 150,
+            y: 750
+          }}
+          animate={{
+            x: 150,
+            y: 400
+          }}
+          transition={{ duration: 1.6 }}
+        />
+
+        {/* <motion.div
                 style={{
                     zIndex: 3,
                     position: 'absolute',
@@ -114,6 +115,7 @@ function Project() {
             >
                 <img src={tree} className='tree' />
             </motion.div>  */}
+      </div>
 
       <Slider className="slider-wrapper">
         {content.map((item, index) => (

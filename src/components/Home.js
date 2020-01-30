@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 import circle from "./assets/circle.svg";
 import tree from "./assets/tree.svg";
 import arrow from "../arrow.svg";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import "../App.css";
+import "../Animations.css";
 
 function Home() {
   return (
-    <div className="container" >
-      <div className="animationContainer"  >
+    <div className="container">
+      <div className="animationContainerHome">
         <motion.div
           style={{
             width: 1000,
@@ -39,23 +40,21 @@ function Home() {
             background: "#095256",
             overflow: "hidden",
             position: "absolute",
-            top: 0,
-            left: 0,
+
             zIndex: 1,
             boxShadow: "0px 3px 10px rgba(0, 0,0,0.5)"
           }}
           initial={{
             x: 1,
-            y: 370
+            y: 920
           }}
           animate={{
             x: 1,
-            y: 120 //120
+            y: 580
           }}
           transition={{ duration: 1.6 }}
         />
       </div>
-
 
       {/* <motion.div
         style={{
@@ -82,7 +81,7 @@ function Home() {
           <li style={{ fontSize: "50px" }}>I'm a full stack web developer.</li>
           <li>
             <Link to="/projects">
-              <button align="center" className="btnHome">
+              <button align="center" className="btnProject">
                 View my work
                 <img
                   style={{ verticalAlign: "middle" }}

@@ -18,6 +18,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
+  z-index: 0;
 }
 
 .tree {
@@ -28,7 +29,6 @@
   display: flex;
   justify-content: center;
   margin: 10%;
-  z-index: 5;
 }
 
 li {
@@ -37,7 +37,7 @@ li {
   color: white;
 }
 
-.btnHome {
+.btnProject {
   border-radius: 0;
   color: white;
   border-style: solid;
@@ -51,16 +51,6 @@ li {
   position: bottom;
 }
 
-.animationContainer {
-  display: flex;
-  height: 450px;
-  width: 1000px;
-  
-  overflow-x: hidden;
-  overflow-y: hidden;
-  align-items: flex-end;
-  bottom: 0;
-  position: absolute;
+.ulText {
   z-index: 3;
-  
 }

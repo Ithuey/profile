@@ -1,0 +1,46 @@
+.animationContainerHome {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: flex-end;
+  justify-content: flex-start;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  flex-shrink: 1;
+
+  background-color: #00bd9d;
+}
+
+.animationContainerProject {
+  display: flex;
+  height: 450px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+
+  margin: auto;
+}
+
+.animationContainerContact {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: flex-end;
+  justify-content: flex-end;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  flex-shrink: 1;
+
+  background-color: #00bd9d;
+}

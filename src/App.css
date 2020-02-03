@@ -25,18 +25,6 @@
   height: 10vmin;
 }
 
-.textContainer {
-  display: flex;
-  justify-content: center;
-  margin: 10%;
-}
-
-li {
-  padding: 5px;
-  text-align: center;
-  color: white;
-}
-
 .btnProject {
   border-radius: 0;
   color: white;
@@ -49,8 +37,4 @@ li {
 .circle {
   height: 80vmin;
   position: bottom;
-}
-
-.ulText {
-  z-index: 3;
 }

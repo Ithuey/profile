@@ -18,7 +18,7 @@ const content = [
     description:
       "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
     button: "Github",
-    image: "https://i.imgur.com/ZXBtVw7.jpg",
+    image: require("./assets/starwars.JPG"),
     icons: [
       <a
         className="icons"
@@ -65,7 +65,7 @@ function Project() {
           }}
           initial={{
             x: -150,
-            y: 750
+            y: 700
           }}
           animate={{
             x: -150,
@@ -87,7 +87,7 @@ function Project() {
           }}
           initial={{
             x: 150,
-            y: 750
+            y: 700
           }}
           animate={{
             x: 150,
@@ -123,7 +123,9 @@ function Project() {
             key={index}
             className="slider-content"
             style={{
-              background: `url('${item.image}') no-repeat center center`
+              backgroundImage: `url(${item.image}) `,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center center"
             }}
           >
             <div className="inner">

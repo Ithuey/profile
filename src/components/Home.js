@@ -5,6 +5,8 @@ import circle from "./assets/circle.svg";
 import tree from "./assets/tree.svg";
 import arrow from "../arrow.svg";
 import { Link, Redirect } from "react-router-dom";
+
+import "../Home.css";
 import "../App.css";
 import "../Animations.css";
 

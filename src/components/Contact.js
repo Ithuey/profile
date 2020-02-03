@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import tree from "./assets/tree.svg";
 
-import "../App.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoIosMail, IoIosContact } from "react-icons/io";
+
+import "../Contact.css";
 
 function Contact() {
   return (
@@ -69,6 +72,19 @@ function Contact() {
             >
                 <img src={tree} className='tree' />
             </motion.div> */}
+      </div>
+      <div className="textContainer">
+        <ul className="contactUlText">
+          <li>
+            <IoIosContact size={60} />
+          </li>
+          <li style={{ fontSize: "2em" }}>
+            <IoIosMail size={20} /> Thueycarp@gmail.com
+          </li>
+          <li>
+            <FaLinkedin size={30} /> <FaGithub size={30} />
+          </li>
+        </ul>
       </div>
     </div>
   );

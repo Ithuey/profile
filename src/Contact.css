@@ -1,0 +1,22 @@
+.textContainer {
+  display: flex;
+
+  /* margin: 10%; */
+
+  z-index: 3;
+}
+
+li {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  align-items: center;
+}
+.contactUlText {
+  z-index: 3;
+  background-color: #339989;
+  border-radius: 1em;
+  box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  margin: 10px;
+}

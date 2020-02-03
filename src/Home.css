@@ -1,0 +1,14 @@
+.textContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+li {
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+.ulText {
+  z-index: 3;
+}

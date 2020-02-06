@@ -19,4 +19,40 @@ li {
   box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.75);
   padding: 10px;
   margin: 10px;
+  width: 40%;
+}
+
+input[type="text"],
+[type="tel"],
+[type="email"] {
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+}
+
+input[type="textarea"] {
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+textarea {
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.btnSubmit {
+  width: 100%;
+  border-radius: 5px;
+  color: white;
 }

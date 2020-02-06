@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import "../Header.css";
 import { Link } from "react-router-dom";
 
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+
 function Header() {
   return (
     <div>
@@ -25,6 +27,24 @@ function Header() {
             </motion.li>
             <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Link to="/contact">Contact</Link>
+            </motion.li>
+          </ul>
+        </nav>
+        <nav className="navIcons">
+          <ul>
+            <motion.li
+              className="navIcons"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaLinkedin size={30} />
+            </motion.li>
+            <motion.li
+              className="navIcons"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <FaGithub size={30} />
             </motion.li>
           </ul>
         </nav>

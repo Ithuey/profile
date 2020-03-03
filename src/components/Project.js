@@ -31,11 +31,11 @@ const content = [
     ]
   },
   {
-    title: "Tortor Dapibus Commodo Aenean Quam",
+    title: "Be Epic",
     description:
       "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
     button: "Github",
-    image: "https://i.imgur.com/DCdBXcq.jpg",
+    image: require("./assets/beepic.gif"),
     icons: [<DiAndroid size={30} />, <DiReact size={30} />]
   },
   {
@@ -123,9 +123,7 @@ function Project() {
             key={index}
             className="slider-content"
             style={{
-              backgroundImage: `url(${item.image}) `,
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center center"
+              backgroundImage: `url(${item.image}) `
             }}
           >
             <div className="inner">

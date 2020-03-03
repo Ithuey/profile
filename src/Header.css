@@ -2,7 +2,7 @@ header {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0px;
-  background: #339989;
+  background: #23262a; /*#339989*/
   display: flex;
   height: 60px;
 }

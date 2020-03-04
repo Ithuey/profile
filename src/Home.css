@@ -1,7 +1,6 @@
 .textContainer {
   display: flex;
-  justify-content: center;
-  margin: 10%;
+  position: absolute;
 }
 
 li {
@@ -9,17 +8,18 @@ li {
   text-align: center;
   color: white;
   list-style-type: none;
+  z-index: 3;
 }
 .ulText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 3;
 }
 
 .icons {
   display: flex;
-
   justify-content: center;
-
-  z-index: 3;
 }
 
 a {
@@ -32,3 +32,14 @@ a {
   justify-content: center;
   bottom: 10px;
 }
+video {
+}
+
+/* .animationContainerHome {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  padding: none;
+  position: fixed;
+  z-index: 0;
+} */

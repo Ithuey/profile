@@ -1,26 +1,20 @@
-header {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0px;
-  background: #23262a; /*#339989*/
-  display: flex;
-  height: 60px;
-  z-index: 1;
-}
-
 nav {
-  margin: auto;
-  width: 70%;
-  display: flex;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  background: #23262a; /*#339989*/
   align-items: center;
   justify-content: flex-start;
+  position: fixed;
+  flex-wrap: wrap;
+  display: flex;
+  top: 0;
+  width: 100%;
+  z-index: 4;
 }
 
 nav h2,
 nav ul {
   font-size: 1.5rem;
-  padding: 10px;
-
+  padding-left: 10px;
   color: white;
 }
 
@@ -28,16 +22,20 @@ nav ul {
   display: flex;
 }
 
-nav a {
+a {
   color: white;
   text-decoration: none;
   padding: 10px;
 }
 
-.navIcons {
+/* .navIcons {
   width: 50%;
   height: 20px;
   width: 50px;
   justify-content: flex-end;
   padding: 5px;
+} */
+
+.navbar > .active {
+  border-bottom: 1px solid white;
 }

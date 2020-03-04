@@ -1,30 +1,36 @@
 /* https://coolors.co/44af69-095256-00bd9d-4ea699-339989 */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* margin: 0;
+  padding: 0; */
 }
 
-.container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100vw;
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  min-width: 100%;
-  min-height: 100%;
 
   overflow-x: hidden;
   overflow-y: hidden;
-  position: relative;
-  z-index: 0;
 }
 
-.tree {
-  height: 10vmin;
+.projects {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 4;
 }
 
 .btnProject {
@@ -36,7 +42,7 @@
   background: transparent;
 }
 
-.circle {
-  height: 80vmin;
-  position: bottom;
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }

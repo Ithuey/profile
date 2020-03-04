@@ -1,10 +1,9 @@
-.textContainer {
+/* .textContainer {
   display: flex;
-
-  /* margin: 10%; */
+  justify-content: center;
 
   z-index: 3;
-}
+} */
 
 li {
   padding: 5px;
@@ -13,6 +12,9 @@ li {
   align-items: center;
 }
 .contactUlText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 3;
   background-color: #161f29;
   border-radius: 1em;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import arrow from "../arrow.svg";
-import { Link, Redirect } from "react-router-dom";
+
 import video from "./assets/redmaple.mp4";
 
 import PDFResume from "../documents/ToddCarpenterResume.pdf";
@@ -12,22 +12,28 @@ import { TiDocument } from "react-icons/ti";
 
 import "../Home.css";
 import "../App.css";
-import "../Animations.css";
+
+import { Link } from "react-scroll";
 
 function Home() {
   return (
-    <div className="container">
-      <div className="animationContainerHome">
-        <video autoPlay muted loop src={video}></video>
-      </div>
+    <div className="home" id="home">
+      <video autoPlay muted loop src={video}></video>
+
       <div className="textContainer">
         <ul className="ulText">
           <li style={{ fontSize: "50px" }}>
             Hello, My name is <b>Todd Carpenter</b>.
           </li>
-          <li style={{ fontSize: "50px" }}>I'm a full stack web developer.</li>
+          <li style={{ fontSize: "50px" }}>I'm a web developer.</li>
           <li>
-            <Link to="/projects">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
               <button align="center" className="btnProject">
                 View my work
                 <img
@@ -40,7 +46,6 @@ function Home() {
           </li>
         </ul>
       </div>
-
       <div className="iconContainer">
         <ul className="icons">
           <motion.li

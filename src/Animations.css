@@ -1,17 +1,19 @@
 .animationContainerHome {
-  display: flex;
-  height: 100%;
+  /* height: 100%;
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  align-items: flex-end;
-  justify-content: flex-start;
-  bottom: 0;
-  position: absolute;
-  z-index: 0;
-  flex-shrink: 1;
 
-  background-color: #141a20;
+  position: fixed;
+  z-index: 0; */
+  /* background-color: #141a20; */
+  height: 100%;
+  width: 100%;
+  float: left;
+  top: 0;
+  padding: none;
+  position: fixed;
+  z-index: 0;
 }
 
 .animationContainerProject {

@@ -13,3 +13,22 @@ li {
 .ulText {
   z-index: 3;
 }
+
+.icons {
+  display: flex;
+
+  justify-content: center;
+
+  z-index: 3;
+}
+
+a {
+  color: white;
+}
+
+.iconContainer {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  bottom: 10px;
+}

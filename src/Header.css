@@ -5,6 +5,7 @@ header {
   background: #23262a; /*#339989*/
   display: flex;
   height: 60px;
+  z-index: 1;
 }
 
 nav {
@@ -35,6 +36,8 @@ nav a {
 
 .navIcons {
   width: 50%;
+  height: 20px;
+  width: 50px;
   justify-content: flex-end;
   padding: 5px;
 }

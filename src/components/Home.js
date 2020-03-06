@@ -22,11 +22,13 @@ function Home() {
 
       <div className="textContainer">
         <ul className="ulText">
-          <li style={{ fontSize: "50px" }}>
+          <li style={{ fontSize: "50px" }} className="homeList">
             Hello, My name is <b>Todd Carpenter</b>.
           </li>
-          <li style={{ fontSize: "50px" }}>I'm a web developer.</li>
-          <li>
+          <li style={{ fontSize: "50px" }} className="homeList">
+            I'm a web developer.
+          </li>
+          <li className="homeList">
             <Link
               to="projects"
               spy={true}

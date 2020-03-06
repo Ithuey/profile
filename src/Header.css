@@ -1,6 +1,6 @@
 nav {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-  background: #23262a; /*#339989*/
+  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  background: #23262a; */
   align-items: center;
   justify-content: flex-start;
   position: fixed;
@@ -11,11 +11,13 @@ nav {
   z-index: 4;
 }
 
+.navbar {
+  list-style-type: none;
+}
 nav h2,
 nav ul {
   font-size: 1.5rem;
   padding-left: 10px;
-  color: white;
 }
 
 nav ul {
@@ -23,7 +25,7 @@ nav ul {
 }
 
 a {
-  color: white;
+  color: #23262a;
   text-decoration: none;
   padding: 10px;
 }
@@ -37,5 +39,5 @@ a {
 } */
 
 .navbar > .active {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #23262a;
 }

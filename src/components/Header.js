@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 import "../Header.css";
 
 import PDFResume from "../documents/ToddCarpenterResume.pdf";
@@ -26,7 +27,7 @@ function Header() {
             to="home"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={0}
             duration={500}
           >
             Home
@@ -42,7 +43,7 @@ function Header() {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={0}
             duration={500}
           >
             Projects
@@ -58,7 +59,7 @@ function Header() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={0}
             duration={500}
           >
             Contact

@@ -1,47 +1,45 @@
 import React from "react";
 import { motion } from "framer-motion";
+import arrow from "../arrow.svg";
+import { Link } from "react-scroll";
+import BeepicDark from "./assets/beepicdark.svg";
 
 import { DiReact, DiAndroid } from "react-icons/di";
 
-import Slider from "react-animated-slider";
-import "react-animated-slider/build/horizontal.css";
-import "normalize.css/normalize.css";
-import "../slider-animations.css";
-import "../Carousel.css";
-import "../Animations.css";
+import "../project.css";
 
 const content = [
-  {
-    title: "StarWars",
-    description:
-      "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
-    button: "Github",
-    image: require("./assets/starwars.JPG"),
-    icons: [
-      <a
-        className="icons"
-        target="_blank"
-        href="https://developer.android.com/"
-      >
-        <DiAndroid size={30} />
-      </a>,
-      <DiReact size={30} />
-    ]
-  },
+  // {
+  //   title: "StarWars",
+  //   description:
+  //     "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
+  //   button: "Github",
+  //   image: require("./assets/starwars.JPG"),
+  //   icons: [
+  //     <a
+  //       className="icons"
+  //       target="_blank"
+  //       href="https://developer.android.com/"
+  //     >
+  //       <DiAndroid size={30} />
+  //     </a>,
+  //     <DiReact size={30} />
+  //   ]
+  // },
   {
     title: "Be Epic",
     description:
-      "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui.",
+      "Be Epic is an app allows its to choose interst and then see post made by other users with in a 25 mile radius. Want to learn to climb, make a post an see if anyone in the area is looking for a partner.",
     button: "Github",
-    image: require("./assets/beepic.gif"),
+    image: require("./assets/beepic.png"),
     icons: [<DiAndroid size={30} />, <DiReact size={30} />]
   },
   {
-    title: "Phasellus volutpat metus",
+    title: "Starwars Info",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
     button: "Github",
-    image: "https://i.imgur.com/DvmN8Hx.jpg",
+    image: require("./assets/starwared.png"),
     icons: [<DiAndroid size={30} />, <DiReact size={30} />]
   }
 ];
@@ -49,28 +47,51 @@ const content = [
 function Project() {
   return (
     <div className="projects" id="projects">
-      <Slider className="slider-wrapper">
-        {content.map((item, index) => (
-          <div
-            key={index}
-            className="slider-content"
-            style={{
-              backgroundImage: `url(${item.image}) `
-            }}
-          >
-            <div className="inner">
-              <h1>{item.title}</h1>
-              <p>{item.description}</p>
-              <button className="carouselB">{item.button}</button>
-              <div className="containerIcons">
-                {item.icons.map((icon, index) => (
-                  <i key={index}>{icon}</i>
-                ))}
+      <div className="projectContainer">
+        {content.map(item => (
+          <ul className="projectUl">
+            <li className="projectList">
+              <div className="projectImg">
+                <img src={item.image} alt="beepic" />
               </div>
-            </div>
-          </div>
+            </li>
+
+            <li style={{ fontSize: "50px" }} className="projectList">
+              <b>{item.title}</b>
+            </li>
+            <li className="projectList">{item.description}</li>
+
+            <li className="projectList">
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                <button align="center" className="btnProject">
+                  View my work
+                  <img
+                    style={{ verticalAlign: "middle" }}
+                    align="center"
+                    src={arrow}
+                  />
+                </button>
+              </Link>
+            </li>
+          </ul>
+
+          // <div className="projectImg">
+          //   <img src={item.image} alt="beepic" />
+          // </div>
+          // <div className="projectList">
+          //   <b>{item.title}</b>
+          // </div>
+          // <div className="projectList">
+          // {item.description}
+          // </div>
         ))}
-      </Slider>
+      </div>
     </div>
   );
 }

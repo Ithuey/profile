@@ -7,6 +7,9 @@ import emailjs from "emailjs-com";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoIosMail, IoIosContact } from "react-icons/io";
 
+import { TiDocument } from "react-icons/ti";
+import PDFResume from "../documents/ToddCarpenterResume.pdf";
+
 import "../Contact.css";
 
 function Contact() {
@@ -43,14 +46,14 @@ function Contact() {
   return (
     <div className="contact" id="contact">
       <ul className="contactUlText">
-        <li>
+        <li className="contactList">
           <IoIosContact size={60} />
         </li>
-        <li>
+        <li className="contactList">
           <h2>LET'S TALK</h2>
         </li>
         <form style={{ color: "red" }} onSubmit={sendEmail}>
-          <li>
+          <li className="contactList">
             <input
               type="text"
               placeholder="Name"
@@ -59,7 +62,7 @@ function Contact() {
             />
           </li>
 
-          <li>
+          <li className="contactList">
             <input
               type="email"
               placeholder="Email"
@@ -67,7 +70,7 @@ function Contact() {
               required
             />
           </li>
-          <li>
+          <li className="contactList">
             <input
               type="tel"
               placeholder="Phone Number"
@@ -75,7 +78,7 @@ function Contact() {
               required
             />
           </li>
-          <li>
+          <li className="contactList">
             <input
               type="text"
               placeholder="Company"
@@ -83,7 +86,7 @@ function Contact() {
               required
             />
           </li>
-          <li>
+          <li className="contactList">
             <input
               type="text"
               placeholder="Position"
@@ -91,7 +94,7 @@ function Contact() {
               required
             />
           </li>
-          <li>
+          <li className="contactList">
             <textarea
               placeholder="Message"
               rows="5"
@@ -104,6 +107,41 @@ function Contact() {
           </button>
         </form>
       </ul>
+      <div className="iconContainer">
+        <ul className="icons">
+          <motion.li
+            className="icons"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a target="_blank" href={PDFResume} title="Resume">
+              <TiDocument size={30} />
+            </a>
+          </motion.li>
+          <motion.li
+            className="icons"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a
+              target="_blank"
+              href="https://linkedin.com/in/todd-houston-carpenter"
+              title="LinkedIn"
+            >
+              <FaLinkedin size={30} />
+            </a>
+          </motion.li>
+          <motion.li
+            className="icons"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <a target="_blank" href="https://github.com/Ithuey" title="GitHub">
+              <FaGithub size={30} />
+            </a>
+          </motion.li>
+        </ul>
+      </div>
     </div>
   );
 }

@@ -5,7 +5,8 @@
   z-index: 3;
 } */
 
-li {
+.contactList {
+  list-style-type: none;
   padding: 5px;
   text-align: center;
   color: white;
@@ -21,7 +22,9 @@ li {
   box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.75);
   padding: 10px;
   margin: 10px;
-  width: 40%;
+  width: 1000px;
+  min-width: 200px;
+  min-height: 450px;
 }
 
 input[type="text"],
@@ -57,4 +60,14 @@ textarea {
   width: 100%;
   border-radius: 5px;
   color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.iconContainer {
+  width: 100%;
+  justify-content: center;
+  bottom: 10px;
 }

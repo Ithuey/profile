@@ -1,0 +1,21 @@
+.projectList {
+  color: white;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.projectUl {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.projectImg {
+  width: 70%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

@@ -1,6 +1,7 @@
 .projectList {
   color: white;
   list-style-type: none;
+  padding: 0 10px 0;
 
   display: flex;
   justify-content: center;

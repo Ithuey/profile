@@ -11,19 +11,17 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
 .projects {
   height: 100%;
-
   overflow-x: hidden;
   overflow-y: hidden;
-
   background-color: #36424d;
   min-height: 100vh;
+  width: auto;
   bottom: 20px;
 }
 
@@ -35,6 +33,20 @@
 } */
 .contact {
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+
+  background-color: #e0c45c;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* .contact {
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -43,7 +55,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   min-width: 100%;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 0px;

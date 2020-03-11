@@ -1,0 +1,32 @@
+.side-drawer {
+  height: 100%;
+  /* background-color: #161f29; */
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 30%;
+  max-width: 400px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.side-drawer ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.side-drawer li {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 701px) {
+  .side-drawer {
+    display: none;
+  }
+}

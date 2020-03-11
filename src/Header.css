@@ -1,16 +1,3 @@
-nav {
-  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
-  background: #23262a; */
-  align-items: center;
-  justify-content: flex-start;
-  position: fixed;
-  flex-wrap: wrap;
-  display: flex;
-  top: 0;
-  width: 100%;
-  z-index: 4;
-}
-
 .navbar {
   list-style-type: none;
 }
@@ -18,9 +5,10 @@ nav h2,
 nav ul {
   font-size: 1.5rem;
   padding-left: 10px;
+  color: #cb3b3b;
 }
 
-nav ul {
+nav .ulHeader {
   display: flex;
 }
 
@@ -28,16 +16,72 @@ a {
   color: #23262a;
   text-decoration: none;
   padding: 10px;
+  cursor: pointer;
 }
 
-/* .navIcons {
+.navIcons {
   width: 50%;
   height: 20px;
   width: 50px;
   justify-content: flex-end;
-  padding: 5px;
-} */
+}
 
 .navbar > .active {
   border-bottom: 1px solid #23262a;
+}
+
+.header.hidden {
+  transform: translateY(-110%);
+}
+
+.toggle {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 99%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* .toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+}*/
+
+.header {
+  align-items: center;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+/*
+
+.toolbar_logo {
+  color: #cb3b3b;
+}
+
+.toolbar_navigation-items .navbar {
+  text-decoration: none;
+} */
+
+@media (max-width: 700px) {
+  .header {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) {
+  .toggle {
+    display: none;
+  }
 }

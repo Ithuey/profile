@@ -45,69 +45,71 @@ function Contact() {
 
   return (
     <div className="contact" id="contact">
-      <ul className="contactUlText">
-        <li className="contactList">
-          <IoIosContact size={60} />
-        </li>
-        <li className="contactList">
-          <h2>LET'S TALK</h2>
-        </li>
-        <form style={{ color: "red" }} onSubmit={sendEmail}>
+      <div className="formContainer">
+        <ul className="contactUlText">
           <li className="contactList">
-            <input
-              type="text"
-              placeholder="Name"
-              name="contact_name"
-              required
-            />
+            <IoIosContact size={60} />
           </li>
+          <li className="contactList">
+            <h2>LET'S TALK</h2>
+          </li>
+          <form style={{ color: "red" }} onSubmit={sendEmail}>
+            <li className="contactList">
+              <input
+                type="text"
+                placeholder="Name"
+                name="contact_name"
+                required
+              />
+            </li>
 
-          <li className="contactList">
-            <input
-              type="email"
-              placeholder="Email"
-              name="contact_email"
-              required
-            />
-          </li>
-          <li className="contactList">
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              name="contact_phoneNumber"
-              required
-            />
-          </li>
-          <li className="contactList">
-            <input
-              type="text"
-              placeholder="Company"
-              name="contact_company"
-              required
-            />
-          </li>
-          <li className="contactList">
-            <input
-              type="text"
-              placeholder="Position"
-              name="contact_position"
-              required
-            />
-          </li>
-          <li className="contactList">
-            <textarea
-              placeholder="Message"
-              rows="5"
-              name="contact_message"
-              required
-            />
-          </li>
-          <button type="Submit" value="Send" className="btnSubmit">
-            Send
-          </button>
-        </form>
-      </ul>
-      <div className="iconContainer">
+            <li className="contactList">
+              <input
+                type="email"
+                placeholder="Email"
+                name="contact_email"
+                required
+              />
+            </li>
+            <li className="contactList">
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                name="contact_phoneNumber"
+                required
+              />
+            </li>
+            <li className="contactList">
+              <input
+                type="text"
+                placeholder="Company"
+                name="contact_company"
+                required
+              />
+            </li>
+            <li className="contactList">
+              <input
+                type="text"
+                placeholder="Position"
+                name="contact_position"
+                required
+              />
+            </li>
+            <li className="contactList">
+              <textarea
+                placeholder="Message"
+                rows="5"
+                name="contact_message"
+                required
+              />
+            </li>
+            <button type="Submit" value="Send" className="btnSubmit">
+              Send
+            </button>
+          </form>
+        </ul>
+      </div>
+      <div className="iconContainerContact">
         <ul className="icons">
           <motion.li
             className="icons"

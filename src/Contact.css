@@ -7,24 +7,26 @@
 
 .contactList {
   list-style-type: none;
-  padding: 5px;
-  text-align: center;
+
   color: white;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  /* display: flex;
+  justify-content: center; */
 }
 .contactUlText {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  z-index: 3;
+  flex-direction: column;
   background-color: #161f29;
   border-radius: 1em;
   box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.75);
   padding: 10px;
-  margin: 10px;
-  width: 1000px;
-  min-width: 200px;
-  min-height: 450px;
+}
+.formContainer {
+  width: 40%;
+  min-width: 350px;
 }
 
 input[type="text"],
@@ -36,6 +38,7 @@ input[type="text"],
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
+
   border: 0;
 }
 
@@ -60,9 +63,21 @@ textarea {
   width: 100%;
   border-radius: 5px;
   color: white;
+  height: 35px;
+  margin-top: 10px;
 }
 
 .icons {
+}
+.iconContainerContact {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  align-items: flex-end;
+}
+
+/* .icons {
   display: flex;
   justify-content: center;
 }
@@ -70,4 +85,4 @@ textarea {
   width: 100%;
   justify-content: center;
   bottom: 10px;
-}
+} */

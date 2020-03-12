@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 // import { BrowserRouter, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import Home from "./components/Home";
-import Project from "./components/Project";
-import Contact from "./components/Contact";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Project from "./components/Project/Project";
+import Contact from "./components/Contact/Contact";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
 
@@ -27,21 +27,14 @@ function App() {
   let backdrop;
 
   if (sideDrawerOpen) {
-    sideDrawer = <SideDrawer />;
+    // sideDrawer = <SideDrawer />;
     backdrop = <Backdrop click={backdropClickHandler} />;
   }
   return (
-    // <BrowserRouter>
-    //   <React.Fragment>
-    //     <Route exact path="/" component={Home} />
-    //     <Header />
-    //     <Route path="/projects" component={Project} />
-    //     <Route path="/contact" component={Contact} />
-    //   </React.Fragment>
-    // </BrowserRouter>
     <div className="App">
       <Header drawerToggleClickHandler={drawerToggleClickHandler} />
-      {sideDrawer}
+      {/* {sideDrawer} */}
+      <SideDrawer show={sideDrawerOpen} />
       {backdrop}
       <Home />
       <Project />

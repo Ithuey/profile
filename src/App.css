@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.home {
+/* .home {
   display: flex;
   position: relative;
   justify-content: center;
@@ -13,9 +13,9 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
-}
+} */
 
-.projects {
+/* .projects {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -23,7 +23,7 @@
   min-height: 100vh;
   width: auto;
   bottom: 20px;
-}
+} */
 
 /* .projects {
   display: flex;
@@ -31,7 +31,7 @@
   flex-direction: column;
   background-color: #36424d;
 } */
-.contact {
+/* .contact {
   display: flex;
   position: relative;
   justify-content: center;
@@ -43,7 +43,7 @@
   background-color: #e0c45c;
   overflow-x: hidden;
   overflow-y: hidden;
-}
+} */
 
 /* .contact {
   display: flex;
@@ -57,7 +57,7 @@
   min-width: 100%;
 } */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
-}
+} */

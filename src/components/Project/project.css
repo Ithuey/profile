@@ -1,0 +1,53 @@
+.projectList {
+  color: white;
+  list-style-type: none;
+  padding: 0 10px 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.projectUl {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.projectImg {
+  width: 70%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.projects {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #36424d;
+  min-height: 100vh;
+  width: auto;
+  bottom: 20px;
+}
+
+.btnProject {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px #cb3b3b solid;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  /* font-family: Arial; */
+
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.btnProject:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* .btnProject:active {
+  position: relative;
+  top: 1px;
+} */

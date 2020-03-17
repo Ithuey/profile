@@ -84,6 +84,11 @@ textarea {
   cursor: pointer;
 }
 
+.btnSubmit:disabled {
+  opacity: 0.6;
+  cursor: unset;
+}
+
 .iconContainerContact {
   display: flex;
   justify-content: center;

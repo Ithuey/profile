@@ -12,16 +12,16 @@ import PDFResume from "../assets/documents/ToddCarpenterResume.pdf";
 import "./Contact.css";
 
 function Contact() {
-  // const [name, setName] = useState("hey");
-  // const [email, setEmail] = useState("");
-  // const [company, setCompany] = useState("");
-  // const [phoneNumber, setPhoneNumber] = useState("");
-  // const [position, setPosition] = useState("");
-  // const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault(e);
 
+    setSubmitted(prevState => {
+      return { setSubmitted: !prevState.submitted };
+    });
+
+    console.log(submitted);
     emailjs
       .sendForm(
         "gmail",
@@ -31,11 +31,12 @@ function Contact() {
       )
       .then(
         results => {
-          console.log("Success!", results.text);
+          // console.log("Success!", results.text);
           alert("Thanks for your interest!");
+          // setSubmitted(false);
         },
         error => {
-          console.log("hmm, that's weird.", error.text);
+          // console.log("hmm, that's weird.", error.text);
           alert("Hmm, didnt work.");
         }
       );
@@ -56,7 +57,7 @@ function Contact() {
             <li className="contactList">
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="Full Name"
                 name="contact_name"
                 required
               />
@@ -73,8 +74,9 @@ function Contact() {
             <li className="contactList">
               <input
                 type="tel"
-                placeholder="Phone Number"
+                placeholder="Phone Number 1112223333"
                 name="contact_phoneNumber"
+                pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$"
                 required
               />
             </li>
@@ -95,14 +97,14 @@ function Contact() {
               />
             </li>
             <li className="contactList">
-              <textarea
-                placeholder="Message"
-                rows="5"
-                name="contact_message"
-                required
-              />
+              <textarea placeholder="Message" rows="5" name="contact_message" />
             </li>
-            <button type="Submit" value="Send" className="btnSubmit">
+            <button
+              disabled={submitted}
+              type="Submit"
+              value="Send"
+              className="btnSubmit"
+            >
               Send
             </button>
           </form>

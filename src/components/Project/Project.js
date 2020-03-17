@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import arrow from "../assets/arrow.svg";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import BeepicDark from "../assets/beepicdark.svg";
 
 import { DiReact, DiAndroid } from "react-icons/di";
@@ -9,23 +11,6 @@ import { DiReact, DiAndroid } from "react-icons/di";
 import "./project.css";
 
 const content = [
-  // {
-  //   title: "StarWars",
-  //   description:
-  //     "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.",
-  //   button: "Github",
-  //   image: require("./assets/starwars.JPG"),
-  //   icons: [
-  //     <a
-  //       className="icons"
-  //       target="_blank"
-  //       href="https://developer.android.com/"
-  //     >
-  //       <DiAndroid size={30} />
-  //     </a>,
-  //     <DiReact size={30} />
-  //   ]
-  // },
   {
     title: "Be Epic",
     description:
@@ -48,55 +33,48 @@ const content = [
     icons: [<DiAndroid size={30} />, <DiReact size={30} />]
   }
 ];
-
+AOS.init({
+  offset: 500,
+  duration: 1000
+});
 function Project() {
   return (
     <div className="projects" id="projects">
       <div className="projectContainer">
         {content.map(item => (
-          <ul className="projectUl">
-            <li className="projectList">
-              <div className="projectImg">
-                <img src={item.image} alt="beepic" />
-              </div>
-            </li>
+          <div>
+            <ul className="projectUl">
+              <li className="projectList" data-aos="fade-up">
+                <div className="projectImg">
+                  <img src={item.image} alt="beepic" />
+                </div>
+              </li>
 
-            <li style={{ fontSize: "50px" }} className="projectList">
-              <b>{item.title}</b>
-            </li>
-            <li className="projectList">{item.description}</li>
-
-            <li className="projectList">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                align="center"
-                className="btnProject"
+              <li
+                style={{ fontSize: "50px" }}
+                className="projectList"
+                data-aos="fade-up"
               >
-                {/* <Link
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                > */}
-                <a href={item.link} target="_blank">
-                  {item.button}
-                </a>
-                {/* </Link> */}
-              </motion.button>
-            </li>
-          </ul>
+                <b>{item.title}</b>
+              </li>
+              <li className=" projectList description" data-aos="fade-up">
+                {item.description}
+              </li>
 
-          // <div className="projectImg">
-          //   <img src={item.image} alt="beepic" />
-          // </div>
-          // <div className="projectList">
-          //   <b>{item.title}</b>
-          // </div>
-          // <div className="projectList">
-          // {item.description}
-          // </div>
+              <li className="projectList" data-aos="fade-up">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  align="center"
+                  className="btnProject"
+                >
+                  <a href={item.link} target="_blank">
+                    {item.button}
+                  </a>
+                </motion.button>
+              </li>
+            </ul>
+          </div>
         ))}
       </div>
     </div>

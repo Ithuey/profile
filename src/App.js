@@ -23,7 +23,6 @@ function App() {
     setSideDrawerOpen(false);
   };
 
-  let sideDrawer;
   let backdrop;
 
   if (sideDrawerOpen) {

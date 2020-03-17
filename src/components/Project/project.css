@@ -51,3 +51,32 @@ img {
   position: relative;
   top: 1px;
 } */
+
+.projectList.description {
+  text-align: center;
+  padding: 0;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+@media (max-width: 701px) {
+  .projectList.description {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@keyframes yourAnimation {
+  0% {
+    transform: rotate(0) translateY(15%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+.projectContainer {
+  animation: yourAnimation 1.3s forwards 0s ease;
+}

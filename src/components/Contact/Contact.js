@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { IoIosMail, IoIosContact } from "react-icons/io";
 
 import { TiDocument } from "react-icons/ti";
 import PDFResume from "../assets/documents/ToddCarpenterResume.pdf";
 
 import "./Contact.css";
+
+import Logo from "../Logo/Logo.js";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -48,7 +49,8 @@ function Contact() {
       <div className="formContainer">
         <ul className="contactUlText">
           <li className="contactList">
-            <IoIosContact size={60} />
+            <Logo />
+            {/* <IoIosContact size={60} /> */}
           </li>
           <li className="contactList">
             <h2>LET'S TALK</h2>
@@ -117,7 +119,12 @@ function Contact() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <a target="_blank" href={PDFResume} title="Resume">
+            <a
+              target="_blank"
+              href={PDFResume}
+              title="Resume"
+              rel="noopener noreferrer"
+            >
               <TiDocument size={30} />
             </a>
           </motion.li>
@@ -130,6 +137,7 @@ function Contact() {
               target="_blank"
               href="https://linkedin.com/in/todd-houston-carpenter"
               title="LinkedIn"
+              rel="noopener noreferrer"
             >
               <FaLinkedin size={30} />
             </a>
@@ -139,7 +147,12 @@ function Contact() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <a target="_blank" href="https://github.com/Ithuey" title="GitHub">
+            <a
+              target="_blank"
+              href="https://github.com/Ithuey"
+              title="GitHub"
+              rel="noopener noreferrer"
+            >
               <FaGithub size={30} />
             </a>
           </motion.li>

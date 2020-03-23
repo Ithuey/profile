@@ -1,0 +1,31 @@
+.svgLogo {
+  width: 50px;
+}
+
+.C {
+  animation-duration: 1s;
+  animation-name: out;
+}
+.svgLogo:hover .C {
+  animation-duration: 1s;
+  animation-name: in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes in {
+  from {
+    transform: translateX(0px) translateY(0px);
+  }
+  to {
+    transform: translateX(-70px) translateY(70px);
+  }
+}
+
+@keyframes out {
+  from {
+    transform: translateX(-70px) translateY(70px);
+  }
+  to {
+    transform: translateX(0px) translateY(0px);
+  }
+}

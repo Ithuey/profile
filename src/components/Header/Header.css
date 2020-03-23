@@ -4,7 +4,7 @@
 nav h2,
 nav ul {
   font-size: 1.5rem;
-  padding-left: 10px;
+
   color: #cb3b3b;
 }
 
@@ -84,4 +84,10 @@ a {
   .toggle {
     display: none;
   }
+}
+
+.toolbar_logo {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
 }

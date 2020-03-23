@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import "./SideDrawer.css";
 import { motion } from "framer-motion";
+import Logo from "../Logo/Logo.js";
 
 const SideDrawer = props => {
   let drawerClasses = "side-drawer";
@@ -12,6 +13,10 @@ const SideDrawer = props => {
   return (
     <nav className={drawerClasses}>
       <ul>
+        <motion.li className="navbar" animate={{}} whileTap={{ scale: 0.9 }}>
+          <Logo />
+        </motion.li>
+
         <motion.li className="navbar" animate={{}} whileTap={{ scale: 0.9 }}>
           <Link
             activeClass="active"

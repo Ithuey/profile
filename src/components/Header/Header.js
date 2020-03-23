@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Logo from "../Logo/Logo.js";
 
 import "./Header.css";
 
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import useDocumentScrollThrottled from "../useDocumentScrollThrottled";
 
@@ -35,7 +36,7 @@ function Header(props) {
     <header className="toolbar">
       <nav className={`header ${shadowStyle} ${hiddenStyle}`}>
         <div className="toolbar_logo">
-          <h2>Todd Carpenter</h2>
+          <Logo />
         </div>
         <div className="toolbar_navigation-items">
           <ul className="ulHeader">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import video from "../assets/redmaple.mp4";
@@ -63,7 +63,12 @@ function Home() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <a target="_blank" href={PDFResume} title="Resume">
+            <a
+              target="_blank"
+              href={PDFResume}
+              title="Resume"
+              rel="noopener noreferrer"
+            >
               <TiDocument size={30} />
             </a>
           </motion.li>
@@ -76,6 +81,7 @@ function Home() {
               target="_blank"
               href="https://linkedin.com/in/todd-houston-carpenter"
               title="LinkedIn"
+              rel="noopener noreferrer"
             >
               <FaLinkedin size={30} />
             </a>
@@ -85,7 +91,12 @@ function Home() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            <a target="_blank" href="https://github.com/Ithuey" title="GitHub">
+            <a
+              target="_blank"
+              href="https://github.com/Ithuey"
+              title="GitHub"
+              rel="noopener noreferrer"
+            >
               <FaGithub size={30} />
             </a>
           </motion.li>
